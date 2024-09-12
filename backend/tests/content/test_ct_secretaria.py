@@ -1,3 +1,4 @@
+from AccessControl import Unauthorized
 from plone import api
 from plone.dexterity.fti import DexterityFTI
 from portal.governo.content.secretaria import Secretaria
@@ -57,8 +58,25 @@ class TestSecretaria:
     def test_has_behavior(self, get_behaviors, behavior):
         assert behavior in get_behaviors(CONTENT_TYPE)
 
-    def test_create(self, secretaria_payload):
-        with api.env.adopt_roles(["Manager"]):
-            content = api.content.create(container=self.portal, **secretaria_payload)
-        assert content.portal_type == CONTENT_TYPE
-        assert isinstance(content, Secretaria)
+    @pytest.mark.parametrize(
+        "role, allowed",
+        [
+            ["Manager", True],
+            ["Site Administrator", True],
+            ["Member", False],
+            ["Editor", False],
+        ],
+    )
+    def test_create(self, secretaria_payload, role, allowed):
+        if allowed:
+            with api.env.adopt_roles(role):
+                content = api.content.create(
+                    container=self.portal, **secretaria_payload
+                )
+            assert content.portal_type == CONTENT_TYPE
+            assert isinstance(content, Secretaria)
+        else:
+            with pytest.raises(Unauthorized):
+                content = api.content.create(
+                    container=self.portal, **secretaria_payload
+                )
