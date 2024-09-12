@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<registry>
+  <records interface="plone.base.interfaces.controlpanel.IMailSchema"
+           prefix="plone"
+           purge="false"
+  >
+    <value key="email_from_name">Novo Portal de Novo Governo</value>
+    <value key="email_from_address">noaresponda@procergs.rs.gov.br</value>
+    <value key="smtp_host">procergs.mail</value>
+  </records>
+</registry>
