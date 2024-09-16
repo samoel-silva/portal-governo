@@ -13,9 +13,11 @@ const Endereco = (props) => {
       </Container>
       <Container className="endereco">
         <span>Cidade</span>: <span>{cidade}</span>
-      </Container>
-      <Container className="endereco">
-        <span>Estado</span>: <span>{estado}</span>
+        {estado && (
+          <>
+            - <span className="estado">{estado.token}</span>
+          </>
+        )}
       </Container>
       <Container className="endereco">
         <span>CEP</span>: <span>{cep}</span>
