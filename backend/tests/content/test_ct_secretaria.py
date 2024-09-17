@@ -80,3 +80,24 @@ class TestSecretaria:
                 content = api.content.create(
                     container=self.portal, **secretaria_payload
                 )
+
+    @pytest.mark.parametrize(
+        "role",
+        [
+            ["Manager"],
+            ["Site Administrator"],
+            ["Member"],
+            ["Editor"],
+        ],
+    )
+    def test_cant_create(self, secretaria_payload, role):
+        usr = api.user.get_current()
+        with api.env.adopt_roles("Manager"):
+            content = api.content.create(container=self.portal, **secretaria_payload)
+        with api.env.adopt_roles(role):
+            assert (
+                api.user.has_permission(
+                    "portal.governo: Add Secretaria", user=usr, obj=content
+                )
+                is False
+            )
