@@ -15,10 +15,11 @@
   <include file="permissions.zcml" />
   <include file="profiles.zcml" />
 
+  <include package=".behaviors" />
   <include package=".controlpanel" />
   <include package=".indexers" />
   <include package=".serializers" />
-  <include package=".vocabularies" />
   <include package=".subscribers" />
+  <include package=".vocabularies" />
 
 </configure>
