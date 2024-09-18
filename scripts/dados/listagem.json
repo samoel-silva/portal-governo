@@ -1,0 +1,297 @@
+{
+  "@id": "http://localhost:8080/Plone/++api++/@search",
+  "items": [
+    {
+      "@id": "http://localhost:8080/Plone",
+      "@type": "Plone Site",
+      "Subject": [],
+      "description": "",
+      "effective": "1969-12-31T03:00:00+00:00",
+      "image_field": "",
+      "image_scales": null,
+      "review_state": null,
+      "title": "Project Title",
+      "type_title": "Site Plone"
+    },
+    {
+      "@id": "http://localhost:8080/Plone/casa-civil",
+      "@type": "Secretaria",
+      "Subject": [],
+      "description": "",
+      "effective": "1969-12-31T03:00:00+00:00",
+      "image_field": "",
+      "image_scales": null,
+      "review_state": "private",
+      "title": "Casa Civil",
+      "type_title": "Secretaria"
+    },
+    {
+      "@id": "http://localhost:8080/Plone/casa-civil/nome-do-secretario",
+      "@type": "Pessoa",
+      "Subject": [],
+      "description": "Biografia do secret\u00e1rio",
+      "effective": "1969-12-31T03:00:00+00:00",
+      "image_field": "image",
+      "image_scales": {
+        "image": [
+          {
+            "content-type": "image/jpeg",
+            "download": "@@images/image-280-f16596f6f22ac81909d890fb5ebd5bfc.jpeg",
+            "filename": "OIP.jfif",
+            "height": 288,
+            "scales": {
+              "icon": {
+                "download": "@@images/image-32-d8437364164a06e5ffeb52b2825b9c28.jpeg",
+                "height": 32,
+                "width": 32
+              },
+              "mini": {
+                "download": "@@images/image-200-496f9a85ba2074ab086abf045feb9839.jpeg",
+                "height": 205,
+                "width": 200
+              },
+              "thumb": {
+                "download": "@@images/image-128-fe37d7032c148e1f9d80a4153ce5610a.jpeg",
+                "height": 128,
+                "width": 125
+              },
+              "tile": {
+                "download": "@@images/image-64-7d6de42e048f30fc78c3d76e8457e48b.jpeg",
+                "height": 64,
+                "width": 63
+              }
+            },
+            "size": 5783,
+            "width": 280
+          }
+        ]
+      },
+      "review_state": "private",
+      "title": "Nome do secretario",
+      "type_title": "Pessoa"
+    },
+    {
+      "@id": "http://localhost:8080/Plone/casa-civil/nova-pessoa",
+      "@type": "Pessoa",
+      "Subject": [],
+      "description": "descr",
+      "effective": "1969-12-31T03:00:00+00:00",
+      "image_field": "image",
+      "image_scales": {
+        "image": [
+          {
+            "content-type": "image/jpeg",
+            "download": "@@images/image-280-a1654187d143fed14d76fba67547f2c8.jpeg",
+            "filename": "OIP.jfif",
+            "height": 288,
+            "scales": {
+              "icon": {
+                "download": "@@images/image-32-2d9e7431540597d29358189ef9c5a259.jpeg",
+                "height": 32,
+                "width": 32
+              },
+              "mini": {
+                "download": "@@images/image-200-148ad52a6c0b8e79bef7280120ba33d5.jpeg",
+                "height": 205,
+                "width": 200
+              },
+              "thumb": {
+                "download": "@@images/image-128-879c9cc0e5a3571c008cbe76a9c914fd.jpeg",
+                "height": 128,
+                "width": 125
+              },
+              "tile": {
+                "download": "@@images/image-64-b2c88a27896bbd654f8b833a1b221aaa.jpeg",
+                "height": 64,
+                "width": 63
+              }
+            },
+            "size": 5783,
+            "width": 280
+          }
+        ]
+      },
+      "review_state": "private",
+      "title": "nova pessoa",
+      "type_title": "Pessoa"
+    },
+    {
+      "@id": "http://localhost:8080/Plone/cultura",
+      "@type": "Secretaria",
+      "Subject": [],
+      "description": "Secretaria de Cultura do Estado do Rio Grande do Sul",
+      "effective": "1969-12-31T03:00:00+00:00",
+      "image_field": "",
+      "image_scales": null,
+      "review_state": "private",
+      "title": "Secretaria de Cultura",
+      "type_title": "Secretaria"
+    },
+    {
+      "@id": "http://localhost:8080/Plone/cultura/beatriz-araujo",
+      "@type": "Pessoa",
+      "Subject": [],
+      "description": "ssumiu a Secretaria Estadual da Cultura em 2019. \u00c0 frente da Sedac, alterou a legisla\u00e7\u00e3o de incentivo \u00e0 cultura, desenvolveu projetos de recupera\u00e7\u00e3o patrimonial e fortaleceu a rela\u00e7\u00e3o com os munic\u00edpios.",
+      "effective": "1969-12-31T03:00:00+00:00",
+      "image_field": "",
+      "image_scales": null,
+      "review_state": "private",
+      "title": "Beatriz Ara\u00fajo",
+      "type_title": "Pessoa"
+    },
+    {
+      "@id": "http://localhost:8080/Plone/fazenda",
+      "@type": "Secretaria",
+      "Subject": [],
+      "description": "",
+      "effective": "1969-12-31T03:00:00+00:00",
+      "image_field": "",
+      "image_scales": null,
+      "review_state": "private",
+      "title": "Fazenda",
+      "type_title": "Secretaria"
+    },
+    {
+      "@id": "http://localhost:8080/Plone/images",
+      "@type": "Document",
+      "Subject": [],
+      "description": "Site images",
+      "effective": "1969-12-31T03:00:00+00:00",
+      "image_field": "",
+      "image_scales": null,
+      "review_state": "published",
+      "title": "Images",
+      "type_title": "P\u00e1gina"
+    },
+    {
+      "@id": "http://localhost:8080/Plone/images/plone-foundation.png",
+      "@type": "Image",
+      "Subject": [
+        "Plone"
+      ],
+      "description": "",
+      "effective": "1969-12-31T03:00:00+00:00",
+      "image_field": "image",
+      "image_scales": {
+        "image": [
+          {
+            "content-type": "image/png",
+            "download": "@@images/image-2000-1b34956c7fa9b4518412e4a21d427d6a.png",
+            "filename": "plone-foundation.png",
+            "height": 439,
+            "scales": {
+              "great": {
+                "download": "@@images/image-1200-52f486beeb83555f7933d6357a7a904c.png",
+                "height": 263,
+                "width": 1200
+              },
+              "huge": {
+                "download": "@@images/image-1600-69d627b52a248c544107d2491e1386c3.png",
+                "height": 351,
+                "width": 1600
+              },
+              "icon": {
+                "download": "@@images/image-32-870f3dd773053241e63fe5f6b18dc79d.png",
+                "height": 7,
+                "width": 32
+              },
+              "large": {
+                "download": "@@images/image-800-d2ac76c24cccf09289e152bcbefbdf76.png",
+                "height": 175,
+                "width": 800
+              },
+              "larger": {
+                "download": "@@images/image-1000-d8ddaf8a3eec0fa195183836bc78f935.png",
+                "height": 219,
+                "width": 1000
+              },
+              "mini": {
+                "download": "@@images/image-200-500e3f73ff19b966e2e5f31b79ff3456.png",
+                "height": 43,
+                "width": 200
+              },
+              "preview": {
+                "download": "@@images/image-400-6ee6992493d8873b3bf614afc0a25120.png",
+                "height": 87,
+                "width": 400
+              },
+              "teaser": {
+                "download": "@@images/image-600-eded99c0c0e024e239b5b941e258f7d8.png",
+                "height": 131,
+                "width": 600
+              },
+              "thumb": {
+                "download": "@@images/image-128-781ed4a31151fd8524811742cdb55db0.png",
+                "height": 28,
+                "width": 128
+              },
+              "tile": {
+                "download": "@@images/image-64-1e38707c549546f1e2ac0f944e9d394c.png",
+                "height": 14,
+                "width": 64
+              }
+            },
+            "size": 50737,
+            "width": 2000
+          }
+        ]
+      },
+      "review_state": null,
+      "title": "Plone Foundation Logo",
+      "type_title": "Imagem"
+    },
+    {
+      "@id": "http://localhost:8080/Plone/jose-luis-datena",
+      "@type": "Pessoa",
+      "Subject": [],
+      "description": "Apresentador de TV",
+      "effective": "1969-12-31T03:00:00+00:00",
+      "image_field": "image",
+      "image_scales": {
+        "image": [
+          {
+            "content-type": "image/jpeg",
+            "download": "@@images/image-160-1b830e2caae0f149537f5e0ef466102c.jpeg",
+            "filename": "th.jfif",
+            "height": 272,
+            "scales": {
+              "icon": {
+                "download": "@@images/image-32-b6e61bfdeb8b5bcf0debfeb2dc5ccd90.jpeg",
+                "height": 32,
+                "width": 18
+              },
+              "thumb": {
+                "download": "@@images/image-128-3b9ce46c25952810940ffc696e2ee810.jpeg",
+                "height": 128,
+                "width": 75
+              },
+              "tile": {
+                "download": "@@images/image-64-3a1ff83d6fe1963181aecd4a8bc4e05c.jpeg",
+                "height": 64,
+                "width": 37
+              }
+            },
+            "size": 6958,
+            "width": 160
+          }
+        ]
+      },
+      "review_state": "private",
+      "title": "Jos\u00e9 Luis Datena",
+      "type_title": "Pessoa"
+    },
+    {
+      "@id": "http://localhost:8080/Plone/secretaria-abc",
+      "@type": "Secretaria",
+      "Subject": [],
+      "description": "",
+      "effective": "1969-12-31T03:00:00+00:00",
+      "image_field": "",
+      "image_scales": null,
+      "review_state": "private",
+      "title": "Secretaria ABC",
+      "type_title": "Secretaria"
+    }
+  ],
+  "items_total": 11
+}
