@@ -2,32 +2,19 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { getBaseUrl } from '@plone/volto/helpers';
 import { Container } from '@plone/components';
-import RenderBlocks from '@plone/volto/components/theme/View/RenderBlocks';
+import Contato from '../Contato/Contato';
 import Endereco from '../Endereco/Endereco';
-import Gestor from '../Gestor/Gestor';
+import RenderBlocks from '@plone/volto/components/theme/View/RenderBlocks';
 
 const SecretariaView = (props) => {
   const { content, location } = props;
-  const { telefone, email, endereco, complemento, cidade, estado, cep } =
-    content;
   const path = getBaseUrl(location?.pathname || '');
 
   return (
     <Container id="page-document" className="view-wrapper secretaria-view">
       <RenderBlocks {...props} path={path} />
-
-      <Gestor content={content} />
-
-      <h2>Endereço/Contato</h2>
-      <Container className="contato">
-        <Container className="telefone">
-          <span>Telefone</span>: <span>{telefone}</span>
-        </Container>
-        <Container className="email">
-          <span>E-mail</span>: <a href={`mailto:${email}`}>{email}</a>
-        </Container>
-      </Container>
       <Endereco content={content} />
+      <Contato content={content} />
     </Container>
   );
 };
