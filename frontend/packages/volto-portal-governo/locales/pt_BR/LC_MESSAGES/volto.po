@@ -16,4 +16,12 @@ msgstr ""
 "Preferred-Encodings: utf-8\n"
 "Domain: volto\n"
 
+#. Default: "Cabeçalho"
+#: components/Blocks/SecretariasBlock/schema
+msgid "Cabeçalho"
+msgstr ""
 
+#. Default: "Secretarias"
+#: components/Blocks/SecretariasBlock/schema
+msgid "Secretarias"
+msgstr ""
