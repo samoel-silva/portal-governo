@@ -4,14 +4,18 @@ import GestorEdit from './components/Blocks/GestorBlock/Edit';
 import GestorView from './components/Blocks/GestorBlock/View';
 import gestorSVG from '@plone/volto/icons/user.svg';
 
-//secretarias
-import ListaSecretariasEdit from './components/Blocks/SecretariasBlock/Edit';
-import ListaSecretariasView from './components/Blocks/SecretariasBlock/View';
-import secretariasSVG from '@plone/volto/icons/user.svg';
+/// Secretarias
+import SecretariasBlockEdit from './components/Blocks/SecretariasBlock/Edit';
+import SecretariasBlockView from './components/Blocks/SecretariasBlock/View';
+import secretariaSVG from '@plone/volto/icons/home.svg';
 
 // Views
 import PessoaView from './components/Views/PessoaView';
 import SecretariaView from './components/Views/SecretariaView';
+
+// Reducers
+import defaultReducers from '@plone/volto/reducers';
+import secretarias from './reducers/secretarias/secretarias';
 
 const applyConfig = (config) => {
   config.settings = {
@@ -44,16 +48,23 @@ const applyConfig = (config) => {
     view: GestorView,
     sidebarTab: 1,
   };
-  /// Bloco Lista Secretarias
-  config.blocks.blocksConfig.listaSecretariasBlock = {
-    id: 'listaSecretariasBlock',
-    title: 'Lista de Secretarias',
+  /// Bloco Secretarias
+  config.blocks.blocksConfig.secretariasBlock = {
+    id: 'secretariasBlock',
+    title: 'Listagem de Secretarias',
     group: 'procergs',
-    icon: secretariasSVG,
-    edit: ListaSecretariasEdit,
-    view: ListaSecretariasView,
+    icon: secretariaSVG,
+    edit: SecretariasBlockEdit,
+    view: SecretariasBlockView,
+    sidebarTab: 1,
   };
 
+  // Reducers
+  const localReducers = {
+    ...defaultReducers,
+    secretarias,
+  };
+  config.addonReducers = { ...config.addonReducers, ...localReducers };
   return config;
 };
 
