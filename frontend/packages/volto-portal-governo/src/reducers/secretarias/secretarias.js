@@ -16,7 +16,7 @@ export default function secretarias(state = initialState, action = {}) {
     case `${LIST_SECRETARIAS}_SUCCESS`:
       return {
         ...state,
-        data: action.result,
+        data: action.result.items,
         error: null,
       };
     case `${LIST_SECRETARIAS}_FAIL`:
